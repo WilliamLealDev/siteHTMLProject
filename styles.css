@@ -1,0 +1,85 @@
+body {
+  font-family: Tahoma;
+}
+
+#img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  height: auto; /* mantém a proporção original da imagem */
+}
+
+.banner {
+  flex: 1;
+  max-width: 100%; /* impede que a imagem fique maior do que a div */
+}
+
+.subImage{
+    flex: 1;
+    max-width: 100%;
+}
+
+@media (min-width: 1100px) {
+    .subImage {
+        max-width: 50%;
+      }
+  }
+  @media (min-width: 1000px) {
+    .subImage {
+        max-width: 70%;
+      }
+  }
+
+
+
+
+h1,
+h2,
+p,
+h1,
+h2 {
+  text-align: center;
+}
+
+.lista {
+  display: flex; /* torna o elemento flexível */
+  flex-wrap: wrap; /* quebra a linha quando necessário */
+  justify-content: center; /* distribui os itens horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.container {
+  display: flex; /* torna o elemento flexível */
+  flex-wrap: wrap; /* quebra a linha quando necessário */
+  justify-content: center; /* distribui os itens horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+}
+
+.item {
+  width: 80%; /* largura do item */
+  margin: 10px; /* espaçamento entre os itens */
+}
+
+.green {
+  color: green;
+}
+
+.purple {
+  color: blueviolet;
+}
+
+.orange {
+  color: rgb(215, 69, 50);
+}
+
+
